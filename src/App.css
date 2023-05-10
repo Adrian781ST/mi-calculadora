@@ -1,0 +1,169 @@
+
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400,800,900);
+
+.App {
+  height: 100vh;
+  padding-top: 10px;
+  background-color: #1b1b32;
+  font-family: Lato, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; 
+}
+
+body, html{
+  font-family:'Martel Sans' ;
+  
+  background-color: #1b1b32;
+}
+
+.flag-logo-contenedor {
+  width: 100%;
+  height: 10px;
+  margin: 50px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flag-logo {
+  height: 40px;
+}
+
+.contenedor-calculadora {
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: #99c9ff;
+  border-radius: 20px;
+  border: 5px solid white;
+}
+
+.fila {
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1{
+  
+  text-align: justify;
+  justify-content: center;
+  color: white;
+  font-size:2ch;
+ 
+}
+
+section.p15 a {
+  width: 274px;
+  height: 58px;
+  line-height: 58px;
+  top: 50%;
+  left: 50%;
+  line-height: 1;
+}
+section.p15 a .in, section.p15 a .t1:before, section.p15 a .t1:after, section.p15 a .t2:before, section.p15 a .t2:after {
+  content: "";
+  width: 0px;
+  height: 19px;
+  background-color: #fff;
+  position: absolute;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
+  -moz-transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
+  transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
+}
+section.p15 a .t1 {
+  
+  top: 0%;
+  left: -228px;
+  position :relative;
+  
+}
+section.p15 a .t1 *, section.p15 a .t1:before, section.p15 a .t1:after {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
+}
+section.p15 a .t1:before {
+  right: 0;
+}
+section.p15 a .t1 .in {
+  right: 0;
+  top: 22px;
+}
+section.p15 a .t1:after {
+  right: 0;
+  top: 45px;
+}
+section.p15 a .t2 {
+  height: 60px;
+  width: 48px;
+  top: 0%;
+  right: -228px;
+  position: relative;
+}
+section.p15 a .t2 *, section.p15 a .t2:before, section.p15 a .t2:after {
+  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+}
+section.p15 a .t2:before {
+  left: 0;
+}
+section.p15 a .t2 .in {
+  left: 0;
+  top: 22px;
+}
+section.p15 a .t2:after {
+  left: 0;
+  top: 45px;
+}
+section.p15 a .t1:before, section.p15 a .t2:before {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+section.p15 a .t1 .in, section.p15 a .t2 .in {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+section.p15 a .t1:after, section.p15 a .t2:after {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+section.p15 a:hover .in, section.p15 a:hover .t1:before, section.p15 a:hover .t1:after, section.p15 a:hover .t2:before, section.p15 a:hover .t2:after {
+  width: 48px;
+}
+section.p15 a:hover .t1:before, section.p15 a:hover .t2:before {
+  -webkit-transition-delay: 0.2s;
+  -moz-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+section.p15 a:hover .t1 .in, section.p15 a:hover .t2 .in {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+section.p15 a:hover .t1:after, section.p15 a:hover .t2:after {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+ 
