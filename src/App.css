@@ -1,15 +1,31 @@
 
 @import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400,800,900);
 
+.App::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
 .App {
-  height: 100vh;
-  padding-top: 10px;
-  background-color: #1b1b32;
+  height: 130vh;
+  padding-top: 39px;
+  background-image: url('assests/imagenes/math.jpg');
+  background-size: cover;
   font-family: Lato, sans-serif;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  position: relative;
+  z-index: 1;
 }
 
 *,
@@ -28,11 +44,13 @@ body, html{
 
 .flag-logo-contenedor {
   width: 100%;
-  height: 10px;
-  margin: 50px;
   display:flex;
-  align-items: center;
+  align-items:center;
   justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  overflow: visible;
 }
 
 .flag-logo {
@@ -44,9 +62,11 @@ body, html{
   height: 600px;
   padding: 14px;
   background-color: #99c9ff;
+  border-image: linear-gradient(90deg, #1de9b6, #1a237e) 1;
   border-radius: 20px;
-  border: 5px solid white;
+  z-index: 2;
 }
+
 
 .fila {
   margin: 4px;
@@ -56,114 +76,30 @@ body, html{
 }
 
 .h1{
-  
-  text-align: justify;
+  text-align: center;
   justify-content: center;
-  color: white;
-  font-size:2ch;
- 
+  background: linear-gradient(135deg, #2196F3, #E040FB, #4fbbd6, #1DE9B6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% 500%;
+  animation: gradientBG 13s ease infinite;
+  font-size: 2rem;
+  font-weight: 800;
 }
 
-section.p15 a {
-  width: 274px;
-  height: 58px;
-  line-height: 58px;
-  top: 50%;
-  left: 50%;
-  line-height: 1;
-}
-section.p15 a .in, section.p15 a .t1:before, section.p15 a .t1:after, section.p15 a .t2:before, section.p15 a .t2:after {
-  content: "";
-  width: 0px;
-  height: 19px;
-  background-color: #fff;
-  position: absolute;
-  -webkit-transition-property: all;
-  -moz-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
-  -moz-transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
-  transition-timing-function: cubic-bezier(0.17, 0.67, 0.46, 1.45);
-}
-section.p15 a .t1 {
-  
-  top: 0%;
-  left: -228px;
-  position :relative;
-  
-}
-section.p15 a .t1 *, section.p15 a .t1:before, section.p15 a .t1:after {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);
-}
-section.p15 a .t1:before {
-  right: 0;
-}
-section.p15 a .t1 .in {
-  right: 0;
-  top: 22px;
-}
-section.p15 a .t1:after {
-  right: 0;
-  top: 45px;
-}
-section.p15 a .t2 {
+section.p15  {
+  width: 100%;
   height: 60px;
-  width: 48px;
-  top: 0%;
-  right: -228px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
-}
-section.p15 a .t2 *, section.p15 a .t2:before, section.p15 a .t2:after {
-  -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
-}
-section.p15 a .t2:before {
-  left: 0;
-}
-section.p15 a .t2 .in {
-  left: 0;
-  top: 22px;
-}
-section.p15 a .t2:after {
-  left: 0;
-  top: 45px;
-}
-section.p15 a .t1:before, section.p15 a .t2:before {
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
-}
-section.p15 a .t1 .in, section.p15 a .t2 .in {
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-section.p15 a .t1:after, section.p15 a .t2:after {
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-section.p15 a:hover .in, section.p15 a:hover .t1:before, section.p15 a:hover .t1:after, section.p15 a:hover .t2:before, section.p15 a:hover .t2:after {
-  width: 48px;
-}
-section.p15 a:hover .t1:before, section.p15 a:hover .t2:before {
-  -webkit-transition-delay: 0.2s;
-  -moz-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
-section.p15 a:hover .t1 .in, section.p15 a:hover .t2 .in {
-  -webkit-transition-delay: 0.1s;
-  -moz-transition-delay: 0.1s;
-  transition-delay: 0.1s;
-}
-section.p15 a:hover .t1:after, section.p15 a:hover .t2:after {
-  -webkit-transition-delay: 0s;
-  -moz-transition-delay: 0s;
-  transition-delay: 0s;
+  z-index: 2;
 }
 
- 
+
+@keyframes gradientBG {
+  0%, 100% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+}

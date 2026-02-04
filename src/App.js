@@ -1,13 +1,13 @@
 import './App.css';
-import flag from './imagenes/flag.png';
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
+import Reproductor from "./componentes/reproductor/reproductor";
 
 function App() {
-
+  
   const [input, setInput] = useState('');
 
   const agregarInput = val => {
@@ -25,17 +25,10 @@ function App() {
   return (
     
     <div className='App'>
-      
+      <Reproductor />
       <div className='flag-logo-contenedor'>
       <section class="p15">
-        <a className="h1">FRIENDLY CALCULATOR
-          <div class="t1">
-            <div class="in"> </div>
-          </div>
-          <div class="t2">
-            <div class="in"> </div>
-          </div>
-        </a>
+        <p className='h1'> FRIENDLY CALCULATOR </p>
     </section>
         
       </div>
@@ -68,7 +61,7 @@ function App() {
         </div>
         <div className='fila'>
           <BotonClear manejarClear={() => setInput('')}>
-            Clear
+            LIMPIAR
           </BotonClear>
         </div>
       </div>
