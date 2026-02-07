@@ -2,6 +2,7 @@ import './App.css';
 import Boton from './componentes/Boton';
 import Pantalla from './componentes/Pantalla';
 import BotonClear from './componentes/BotonClear';
+import StarField from './componentes/StarField';
 import { useState } from 'react';
 import { evaluate } from 'mathjs';
 import Reproductor from "./componentes/reproductor/reproductor";
@@ -25,6 +26,7 @@ function App() {
   return (
     
     <div className='App'>
+      <StarField />
       <Reproductor />
       <div className='flag-logo-contenedor'>
       <section class="p15">

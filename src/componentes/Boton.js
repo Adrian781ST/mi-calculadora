@@ -7,9 +7,13 @@ function Boton(props) {
     return isNaN(valor) && (valor !== '.') && (valor !== '=');
   };
 
+  const esIgual = valor => {
+    return valor === '=';
+  };
+
   return (
     <div
-      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''}`.trimEnd()}
+      className={`boton-contenedor ${esOperador(props.children) ? 'operador' : ''} ${esIgual(props.children) ? 'boton-igual' : ''}`.trimEnd()}
       onClick={() => props.manejarClic(props.children)}>
       {props.children}
     </div>

@@ -1,5 +1,15 @@
-
 @import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,400,800,900);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
 
 .App::before {
   content: '';
@@ -15,30 +25,20 @@
 }
 
 .App {
-  height: 130vh;
-  padding-top: 39px;
-  background-image: url('assests/imagenes/math.jpg');
-  background-size: cover;
+  min-height: 100vh;
+  padding: 10px;
+  background: linear-gradient(180deg, #0a0a1a 0%, #1a1a3a 50%, #0a0a1a 100%);
   font-family: Lato, sans-serif;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
 
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; 
-}
-
 body, html{
-  font-family:'Martel Sans' ;
-  
+  font-family:'Martel Sans';
   background-color: #1b1b32;
 }
 
@@ -48,28 +48,27 @@ body, html{
   align-items:center;
   justify-content: center;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   overflow: visible;
 }
 
 .flag-logo {
-  height: 40px;
+  height: 30px;
 }
 
 .contenedor-calculadora {
-  width: 400px;
-  height: 600px;
-  padding: 14px;
+  width: 100%;
+  max-width: 320px;
+  padding: 10px;
   background-color: #99c9ff;
   border-image: linear-gradient(90deg, #1de9b6, #1a237e) 1;
-  border-radius: 20px;
+  border-radius: 15px;
   z-index: 2;
 }
 
 
 .fila {
-  margin: 4px;
+  margin: 2px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,18 +83,20 @@ body, html{
   -webkit-text-fill-color: transparent;
   background-size: 500% 500%;
   animation: gradientBG 13s ease infinite;
-  font-size: 2rem;
+  font-size: 1.3rem;
   font-weight: 800;
+  margin-bottom: 5px;
 }
 
 section.p15  {
   width: 100%;
-  height: 60px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 2;
+  margin-bottom: 5px;
 }
 
 
